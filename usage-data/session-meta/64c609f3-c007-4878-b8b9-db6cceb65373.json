@@ -1,0 +1,78 @@
+{
+  "session_id": "64c609f3-c007-4878-b8b9-db6cceb65373",
+  "project_path": "/Users/royrigamonti",
+  "start_time": "2026-03-02T10:24:05.771Z",
+  "duration_minutes": 8,
+  "user_message_count": 13,
+  "assistant_message_count": 48,
+  "tool_counts": {
+    "Bash": 14,
+    "Read": 6,
+    "Write": 1
+  },
+  "languages": {
+    "Markdown": 3,
+    "JSON": 2,
+    "TypeScript": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 398,
+  "output_tokens": 5094,
+  "first_prompt": "il percorso è royrigamonti/chuck",
+  "user_interruptions": 0,
+  "user_response_times": [
+    49.27,
+    23.398,
+    282.129,
+    282.129,
+    282.129,
+    294.772,
+    294.772,
+    294.772,
+    306.65,
+    306.646,
+    306.646
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "Command Failed": 1
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 62,
+  "lines_removed": 0,
+  "files_modified": 1,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T10:24:19.790Z",
+    "2026-03-02T10:24:19.790Z",
+    "2026-03-02T10:25:44.768Z",
+    "2026-03-02T10:26:30.745Z",
+    "2026-03-02T10:32:00.376Z",
+    "2026-03-02T10:32:00.376Z",
+    "2026-03-02T10:32:00.376Z",
+    "2026-03-02T10:32:13.019Z",
+    "2026-03-02T10:32:13.019Z",
+    "2026-03-02T10:32:13.019Z",
+    "2026-03-02T10:32:24.897Z",
+    "2026-03-02T10:32:24.893Z",
+    "2026-03-02T10:32:24.893Z"
+  ]
+}

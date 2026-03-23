@@ -1,0 +1,8 @@
+{
+  "pluginId": "laravel-boost@claude-plugins-official",
+  "createdAt": "2026-02-12T14:19:56.319Z",
+  "files": {
+    ".claude-plugin/plugin.json": "bb195fa8dd2e0405155edf3233cee0467775306df3238eece559748e0285116f",
+    ".mcp.json": "f7aa15d771660f4f05a7d09075be432f2ce0a0fdd4848ba7c4a766bdcce6c093"
+  }
+}

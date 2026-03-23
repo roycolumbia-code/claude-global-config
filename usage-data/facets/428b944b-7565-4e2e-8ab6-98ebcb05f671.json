@@ -1,0 +1,19 @@
+{
+  "underlying_goal": "Add ~/.local/bin to PATH in .zshrc as suggested by a system message",
+  "goal_categories": {
+    "shell_configuration": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "very_helpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "wrong_approach": 1
+  },
+  "friction_detail": "Claude tried two failed tool approaches (serena shell command) before succeeding with Bash tool.",
+  "primary_success": "good_explanations",
+  "brief_summary": "User needed ~/.local/bin added to PATH in .zshrc; Claude accomplished it after a couple of tool missteps.",
+  "session_id": "428b944b-7565-4e2e-8ab6-98ebcb05f671"
+}

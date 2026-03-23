@@ -1,0 +1,15 @@
+{
+  "underlying_goal": "Configure Claude Code environment by switching model and installing a plugin",
+  "goal_categories": {
+    "warmup_minimal": 1
+  },
+  "outcome": "fully_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "unhelpful",
+  "session_type": "single_task",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "none",
+  "brief_summary": "User ran local commands to switch model to Haiku and install a plugin, then exited — no interaction with Claude.",
+  "session_id": "2a4882f1-cf1c-4a1f-a9a1-0aace56df3bc"
+}

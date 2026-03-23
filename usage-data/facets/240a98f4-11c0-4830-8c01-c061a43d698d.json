@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Understanding a startup hook error message and connecting MCP services",
+  "goal_categories": {
+    "troubleshooting_question": 1
+  },
+  "outcome": "not_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "misunderstood_request": 1
+  },
+  "friction_detail": "Claude couldn't see the error message the user was referring to and asked for clarification, but user moved on without providing it.",
+  "primary_success": "none",
+  "brief_summary": "User asked about a startup hook error message, Claude asked for clarification but user moved on to connecting MCP services and exited.",
+  "session_id": "240a98f4-11c0-4830-8c01-c061a43d698d"
+}

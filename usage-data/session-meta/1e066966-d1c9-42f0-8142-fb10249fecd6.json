@@ -1,0 +1,50 @@
+{
+  "session_id": "1e066966-d1c9-42f0-8142-fb10249fecd6",
+  "project_path": "/Users/royrigamonti/Chuck/BauhasClock",
+  "start_time": "2026-03-03T09:22:30.476Z",
+  "duration_minutes": 5,
+  "user_message_count": 5,
+  "assistant_message_count": 38,
+  "tool_counts": {
+    "Read": 2,
+    "Skill": 1,
+    "Glob": 1,
+    "Edit": 7,
+    "Bash": 1
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 284,
+  "output_tokens": 5301,
+  "first_prompt": "Implement the following plan:  # Piano: Fix font e separazione tick markers / numeri minuti  ## Context L'utente vuole che il clock corrisponda al design di stile.png. Attualmente ci sono due problemi…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    237.547,
+    237.543,
+    237.543
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 8,
+  "lines_removed": 8,
+  "files_modified": 1,
+  "message_hours": [
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T09:22:30.353Z",
+    "2026-03-03T09:22:44.295Z",
+    "2026-03-03T09:27:31.310Z",
+    "2026-03-03T09:27:31.306Z",
+    "2026-03-03T09:27:31.306Z"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "User was trying to connect MCP servers (Notion and Slack), likely typed '7mcp' as a typo for the /mcp command",
+  "goal_categories": {
+    "warmup_minimal": 1
+  },
+  "outcome": "unclear_from_transcript",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "unhelpful",
+  "session_type": "single_task",
+  "friction_counts": {
+    "misunderstood_request": 1
+  },
+  "friction_detail": "User typed '7mcp' likely as a typo for /mcp command, Claude couldn't interpret it, but user resolved it themselves via local commands.",
+  "primary_success": "none",
+  "brief_summary": "User wanted to connect MCP servers and did so via local commands after an initial typo; Claude was not needed.",
+  "session_id": "3f21b0ce-304b-49a1-a1ef-594fba27fa82"
+}

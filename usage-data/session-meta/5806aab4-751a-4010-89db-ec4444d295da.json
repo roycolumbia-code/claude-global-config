@@ -1,0 +1,51 @@
+{
+  "session_id": "5806aab4-751a-4010-89db-ec4444d295da",
+  "project_path": "/Users/royrigamonti/Chuck/BauhasClock",
+  "start_time": "2026-03-03T09:15:36.651Z",
+  "duration_minutes": 7,
+  "user_message_count": 3,
+  "assistant_message_count": 36,
+  "tool_counts": {
+    "Read": 6,
+    "Glob": 1,
+    "Edit": 2,
+    "Bash": 2,
+    "Agent": 1,
+    "Write": 1,
+    "ExitPlanMode": 1
+  },
+  "languages": {
+    "Markdown": 1
+  },
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 226,
+  "output_tokens": 13019,
+  "first_prompt": "Preparazione:                                  1. Il progetto è salvato in /Users/royrigamonti/Chuck/BauhasClock…",
+  "user_interruptions": 1,
+  "user_response_times": [
+    116.112,
+    13.018
+  ],
+  "tool_errors": 1,
+  "tool_error_categories": {
+    "User Rejected": 1
+  },
+  "uses_task_agent": true,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 104,
+  "lines_removed": 7,
+  "files_modified": 2,
+  "message_hours": [
+    10,
+    10,
+    10
+  ],
+  "user_message_timestamps": [
+    "2026-03-03T09:15:45.001Z",
+    "2026-03-03T09:18:49.377Z",
+    "2026-03-03T09:22:30.361Z"
+  ]
+}

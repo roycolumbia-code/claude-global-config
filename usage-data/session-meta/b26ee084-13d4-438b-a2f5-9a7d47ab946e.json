@@ -1,0 +1,34 @@
+{
+  "session_id": "b26ee084-13d4-438b-a2f5-9a7d47ab946e",
+  "project_path": "/Users/royrigamonti/.claude-mem/observer-sessions",
+  "start_time": "2026-03-02T10:08:18.577Z",
+  "duration_minutes": 0,
+  "user_message_count": 2,
+  "assistant_message_count": 3,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 30,
+  "output_tokens": 336,
+  "first_prompt": "Hello memory agent, you are continuing to observe the primary Claude session.  <observed_from_primary_session>   <user_request>Work context Roy is the Managing Director of Columbia Transport, an inter…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T10:08:18.577Z",
+    "2026-03-02T10:08:29.302Z"
+  ]
+}

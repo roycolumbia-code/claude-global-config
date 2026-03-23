@@ -1,0 +1,42 @@
+{
+  "session_id": "8dd7b1c4-83a2-4c07-ae15-b8705b3cc15f",
+  "project_path": "/Users/royrigamonti/.claude-mem/observer-sessions",
+  "start_time": "2026-03-02T15:05:38.298Z",
+  "duration_minutes": 2,
+  "user_message_count": 4,
+  "assistant_message_count": 13,
+  "tool_counts": {
+    "Skill": 2
+  },
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 120,
+  "output_tokens": 5699,
+  "first_prompt": "<observed_from_primary_session>   <what_happened>Bash</what_happened>   <occurred_at>2026-03-02T15:06:11.452Z</occurred_at>   <working_directory>/Users/royrigamonti/Chuck/BauhasClock</working_director…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 2,
+  "tool_error_categories": {
+    "Other": 2
+  },
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    16,
+    16,
+    16,
+    16
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T15:05:38.299Z",
+    "2026-03-02T15:06:46.728Z",
+    "2026-03-02T15:07:08.230Z",
+    "2026-03-02T15:07:25.262Z"
+  ]
+}

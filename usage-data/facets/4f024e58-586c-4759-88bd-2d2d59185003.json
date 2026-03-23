@@ -1,0 +1,21 @@
+{
+  "underlying_goal": "Check for and potentially install updates to Claude Code, then troubleshoot a remote control feature issue",
+  "goal_categories": {
+    "system_administration": 1,
+    "troubleshooting": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1,
+    "dissatisfied": 1
+  },
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "multi_task",
+  "friction_counts": {
+    "misunderstood_request": 1
+  },
+  "friction_detail": "Claude couldn't help with the remote control issue because it couldn't see the user's screen and the user didn't provide enough context before exiting.",
+  "primary_success": "good_explanations",
+  "brief_summary": "User wanted to check for Claude Code updates and troubleshoot remote control, got update info but left before resolving the remote control issue.",
+  "session_id": "4f024e58-586c-4759-88bd-2d2d59185003"
+}

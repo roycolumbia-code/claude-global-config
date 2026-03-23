@@ -1,0 +1,26 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-03-23T09:28:57.269Z"
+  },
+  "everything-claude-code": {
+    "source": {
+      "source": "github",
+      "repo": "affaan-m/everything-claude-code"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/everything-claude-code",
+    "lastUpdated": "2026-03-02T08:45:26.064Z"
+  },
+  "thedotmack": {
+    "source": {
+      "source": "github",
+      "repo": "thedotmack/claude-mem"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/thedotmack",
+    "lastUpdated": "2026-03-02T09:19:22.178Z"
+  }
+}

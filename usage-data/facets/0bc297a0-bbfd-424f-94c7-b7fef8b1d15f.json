@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Understand and fix a PATH configuration issue for ~/.local/bin",
+  "goal_categories": {
+    "troubleshooting_help": 1
+  },
+  "outcome": "mostly_achieved",
+  "user_satisfaction_counts": {
+    "likely_satisfied": 1
+  },
+  "claude_helpfulness": "moderately_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {},
+  "friction_detail": "",
+  "primary_success": "good_explanations",
+  "brief_summary": "User asked what to do about a PATH warning message and Claude explained the fix command clearly.",
+  "session_id": "0bc297a0-bbfd-424f-94c7-b7fef8b1d15f"
+}

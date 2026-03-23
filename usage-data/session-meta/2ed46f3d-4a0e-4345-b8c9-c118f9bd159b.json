@@ -1,0 +1,38 @@
+{
+  "session_id": "2ed46f3d-4a0e-4345-b8c9-c118f9bd159b",
+  "project_path": "/Users/royrigamonti/.claude-mem/observer-sessions",
+  "start_time": "2026-03-02T10:25:47.798Z",
+  "duration_minutes": 0,
+  "user_message_count": 4,
+  "assistant_message_count": 8,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 80,
+  "output_tokens": 549,
+  "first_prompt": "Hello memory agent, you are continuing to observe the primary Claude session.  <observed_from_primary_session>   <user_request>il percorso è royrigamonti/chuck</user_request>   <requested_at>2026-03-0…",
+  "user_interruptions": 0,
+  "user_response_times": [],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T10:25:47.798Z",
+    "2026-03-02T10:25:55.675Z",
+    "2026-03-02T10:26:00.564Z",
+    "2026-03-02T10:26:03.939Z"
+  ]
+}

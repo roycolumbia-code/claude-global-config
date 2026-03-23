@@ -1,0 +1,42 @@
+{
+  "session_id": "0bc297a0-bbfd-424f-94c7-b7fef8b1d15f",
+  "project_path": "/Users/royrigamonti/Chuck",
+  "start_time": "2026-03-02T10:00:16.908Z",
+  "duration_minutes": 1,
+  "user_message_count": 4,
+  "assistant_message_count": 2,
+  "tool_counts": {},
+  "languages": {},
+  "git_commits": 0,
+  "git_pushes": 0,
+  "input_tokens": 20,
+  "output_tokens": 545,
+  "first_prompt": "ho visto ancora questo messaggio:  Native installation exists but ~/.local/bin is not in your PATH. Run:…",
+  "user_interruptions": 0,
+  "user_response_times": [
+    31.364,
+    31.358,
+    31.358
+  ],
+  "tool_errors": 0,
+  "tool_error_categories": {},
+  "uses_task_agent": false,
+  "uses_mcp": false,
+  "uses_web_search": false,
+  "uses_web_fetch": false,
+  "lines_added": 0,
+  "lines_removed": 0,
+  "files_modified": 0,
+  "message_hours": [
+    11,
+    11,
+    11,
+    11
+  ],
+  "user_message_timestamps": [
+    "2026-03-02T10:00:55.680Z",
+    "2026-03-02T10:01:34.309Z",
+    "2026-03-02T10:01:34.303Z",
+    "2026-03-02T10:01:34.303Z"
+  ]
+}

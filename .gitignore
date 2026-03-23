@@ -1,0 +1,21 @@
+# File di sessione e log (grandi, effimeri)
+history.jsonl
+debug/
+session-env/
+telemetry/
+cache/
+paste-cache/
+file-history/
+backups/
+shell-snapshots/
+sessions/
+
+# File specifici del device
+.DS_Store
+mcp-needs-auth-cache.json
+vercel-plugin-device-id
+vercel-plugin-telemetry-preference
+
+# File di stato temporanei
+*.tmp
+*.lock

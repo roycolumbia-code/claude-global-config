@@ -1,0 +1,17 @@
+{
+  "underlying_goal": "Understanding an error message about 'install' not being in PATH that appeared when launching Claude CLI",
+  "goal_categories": {
+    "troubleshooting": 1
+  },
+  "outcome": "partially_achieved",
+  "user_satisfaction_counts": {},
+  "claude_helpfulness": "slightly_helpful",
+  "session_type": "quick_question",
+  "friction_counts": {
+    "misunderstood_request": 1
+  },
+  "friction_detail": "Claude initially didn't understand that 'claude install' referred to a CLI error message the user had seen, requiring clarification.",
+  "primary_success": "good_explanations",
+  "brief_summary": "User wanted help understanding a PATH-related error from Claude CLI; got a partial explanation before exiting.",
+  "session_id": "8c1b3da4-2767-4b77-bcec-1f89023db042"
+}

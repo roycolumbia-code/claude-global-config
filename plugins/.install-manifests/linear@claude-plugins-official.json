@@ -1,0 +1,8 @@
+{
+  "pluginId": "linear@claude-plugins-official",
+  "createdAt": "2026-02-12T14:20:01.744Z",
+  "files": {
+    ".claude-plugin/plugin.json": "25d00b56e7789e19ce0d3b311a6686fb2e23a4dd91e3f1f3bb33e3aba684b390",
+    ".mcp.json": "60bc954e5c2018171f5efa358ddbfa6062a63b456f8d7fa567fd926910030e9f"
+  }
+}
