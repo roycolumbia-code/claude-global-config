@@ -99,6 +99,15 @@
           }
         ],
         "matcher": "*"
+      },
+      {
+        "hooks": [
+          {
+            "command": "/Users/royrigamonti/.claude/hooks/pull-config-github.sh",
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
       }
     ],
     "Stop": [
