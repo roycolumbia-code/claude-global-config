@@ -18,6 +18,7 @@ vercel-plugin-telemetry-preference
 
 # Dati di sessione conversazione (privati)
 projects/**/*.jsonl
+projects/**/tool-results/
 homunculus/
 
 # Submodule plugin (gestito separatamente)
