@@ -11,3 +11,5 @@ Ogni volta che creo o aggiorno un file significativo (report HTML, analisi, skil
 **Why:** Roy vuole trovare qualsiasi lavoro fatto in sessioni precedenti senza dover ricercare nei file — basta leggere MEMORY.md al prossimo avvio.
 
 **How to apply:** Alla fine di ogni sessione in cui ho prodotto output concreti, aggiorno MEMORY.md. Vale per report HTML, skill create, agenti, file di analisi, decisioni strutturali.
+
+Regola aggiuntiva: quando Roy chiede un'analisi su dati (clienti, servizi, confronti, trend), produco SEMPRE un file HTML con dark theme — anche senza che lo chieda esplicitamente. L'HTML è l'output di default per qualsiasi studio.
