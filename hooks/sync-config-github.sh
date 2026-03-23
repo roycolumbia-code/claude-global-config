@@ -6,6 +6,7 @@
 DIRS=(
     "/Users/royrigamonti/.claude"
     "/Users/royrigamonti/Chuck/.claude"
+    "/Users/royrigamonti/chuck/IIB"
 )
 
 for DIR in "${DIRS[@]}"; do
