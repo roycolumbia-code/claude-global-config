@@ -16,6 +16,13 @@ mcp-needs-auth-cache.json
 vercel-plugin-device-id
 vercel-plugin-telemetry-preference
 
+# Dati di sessione conversazione (privati)
+projects/**/*.jsonl
+homunculus/
+
+# Submodule plugin (gestito separatamente)
+plugins/marketplaces/
+
 # File di stato temporanei
 *.tmp
 *.lock
