@@ -33,6 +33,14 @@ Comunicazione interna: solo email.
 - Ogni task si chiude con un output visivo (summary, tabella, grafico)
 - Usa sub-agenti per analisi pesanti — scrivi output in vault Obsidian
 
+## opencli (installato)
+- Tool disponibile: `opencli` via Bash — 332 comandi su 55 siti + CLI esterne
+- Usa `opencli list` per scoprire i tool disponibili
+- Usalo in autonomia quando serve: ricerche web, YouTube, LinkedIn, Bloomberg, Reddit, ecc.
+- Siti con cookie (richiede browser aperto): YouTube, LinkedIn, Twitter, Instagram, ecc.
+- Siti public (nessun login): Google, HackerNews, ArXiv, Wikipedia, Bloomberg RSS, ecc.
+- Per azioni irreversibili (post, follow, DM): chiedi sempre conferma prima
+
 ## Safety Rules — Chiedere Sempre Conferma Prima di:
 - Inviare email o messaggi
 - Modificare dati o file
