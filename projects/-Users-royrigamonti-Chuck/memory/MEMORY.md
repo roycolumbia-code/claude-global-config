@@ -11,3 +11,4 @@
 ## Reference
 
 - [reference_beone_analytics.md](reference_beone_analytics.md) — Credenziali BeOne Analytics (Qlik Sense): cltsara / sara2026
+- [reference_columbia_address.md](reference_columbia_address.md) — Indirizzo sede Columbia Transport: Via Papa Giovanni XXIII 24, 20053 Rodano (MI)
