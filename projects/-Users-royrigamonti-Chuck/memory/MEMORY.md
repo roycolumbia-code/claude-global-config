@@ -7,3 +7,7 @@
 - [feedback_output_tracking.md](feedback_output_tracking.md) — Ogni output definitivo va registrato in MEMORY.md del vault Obsidian
 
 - [feedback_icloud_output.md](feedback_icloud_output.md) — Dopo ogni skill con file di output, chiedere se copiare su iCloud Drive per iPhone
+
+## Reference
+
+- [reference_beone_analytics.md](reference_beone_analytics.md) — Credenziali BeOne Analytics (Qlik Sense): cltsara / sara2026
