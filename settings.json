@@ -149,7 +149,7 @@
       "Bash(python3 -c \"import subprocess; print\\(subprocess.run\\([''open'', ''--version''], capture_output=True\\).stdout\\)\")",
       "Bash(python3 -:*)"
     ],
-    "defaultMode": "acceptEdits"
+    "defaultMode": "auto"
   },
   "statusLine": {
     "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-statusline.js\"",
