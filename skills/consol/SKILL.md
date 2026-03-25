@@ -26,7 +26,7 @@ Dato un numero di consolidata (es. `/consol 11`), cerca le email operative → r
 
 3. **Produci tabella markdown** (nel messaggio)
 
-4. **Crea file HTML** in `chuck/Genova/consol-[N].html`
+4. **Crea file HTML** in `chuck/Canada/consol-[N].html`
 
 ---
 
@@ -63,7 +63,7 @@ Booking: [booking ID] | Equipment: [tipo] | Destinazione: Montreal
 
 ## File HTML — Struttura
 
-Crea `chuck/Genova/consol-[N].html` con:
+Crea `chuck/Canada/consol-[N].html` con:
 - **Dark theme** (background #0d1117, testo #e6edf3)
 - **Header**: "Consol #[N] — Cargo List" + booking + data aggiornamento
 - **Tabella** con colori stato:
@@ -91,5 +91,5 @@ Crea `chuck/Genova/consol-[N].html` con:
 - [ ] Identificato il booking number
 - [ ] Distinzione chiara tra shippers confermati, in attesa e rimossi
 - [ ] Tabella markdown prodotta nel messaggio
-- [ ] File HTML creato in chuck/Genova/consol-[N].html
+- [ ] File HTML creato in chuck/Canada/consol-[N].html
 - [ ] MEMORY.md del vault aggiornato con il file prodotto (sezione "Report e Output Prodotti")
