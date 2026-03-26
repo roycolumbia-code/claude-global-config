@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-26T16:16:38.694Z"
+    "lastUpdated": "2026-03-26T16:36:09.465Z"
   },
   "everything-claude-code": {
     "source": {
@@ -38,5 +38,13 @@
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claudekit-skills",
     "lastUpdated": "2026-03-26T08:17:07.343Z"
+  },
+  "obsidian-skills": {
+    "source": {
+      "source": "github",
+      "repo": "kepano/obsidian-skills"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/obsidian-skills",
+    "lastUpdated": "2026-03-26T16:37:13.310Z"
   }
 }

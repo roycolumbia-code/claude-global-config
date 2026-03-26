@@ -158,7 +158,8 @@
     "theme-factory@awesome-claude-plugins": true,
     "connect-apps@awesome-claude-plugins": true,
     "media-tools@claudekit-skills": true,
-    "document-processing@claudekit-skills": true
+    "document-processing@claudekit-skills": true,
+    "obsidian@obsidian-skills": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -171,6 +172,12 @@
       "source": {
         "source": "github",
         "repo": "mrgoonie/claudekit-skills"
+      }
+    },
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
       }
     }
   },
