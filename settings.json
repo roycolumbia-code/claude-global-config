@@ -1,4 +1,107 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash",
+      "mcp__claude_ai_ms365__outlook_email_search",
+      "mcp__claude_ai_ms365__outlook_calendar_search",
+      "mcp__claude_ai_Slack__slack_search_public",
+      "mcp__plugin_Notion_notion__notion-search",
+      "mcp__plugin_serena_serena__write_memory",
+      "Bash(unzip:*)",
+      "Bash(python3:*)",
+      "mcp__plugin_serena_serena__list_dir",
+      "mcp__plugin_serena_serena__read_file",
+      "Bash(sed:*)",
+      "mcp__claude_ai_ms365__read_resource",
+      "Bash(python3 -c \"import subprocess; print\\(subprocess.run\\([''open'', ''--version''], capture_output=True\\).stdout\\)\")",
+      "Bash(python3 -:*)"
+    ],
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-notification.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-context-monitor.js\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-check-update.js\""
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-session-start.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/vault-memory-loader.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/pull-config-github.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-stop.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/sync-config-github.sh"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-statusline.js\""
+  },
   "enabledPlugins": {
     "agent-sdk-dev@claude-plugins-official": true,
     "atlassian@claude-plugins-official": true,
@@ -49,110 +152,27 @@
     "superpowers@claude-plugins-official": true,
     "swift-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "vercel@claude-plugins-official": true
+    "vercel@claude-plugins-official": true,
+    "canvas-design@awesome-claude-plugins": true,
+    "artifacts-builder@awesome-claude-plugins": true,
+    "theme-factory@awesome-claude-plugins": true,
+    "connect-apps@awesome-claude-plugins": true,
+    "media-tools@claudekit-skills": true,
+    "document-processing@claudekit-skills": true
   },
-  "hooks": {
-    "Notification": [
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-notification.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
+  "extraKnownMarketplaces": {
+    "awesome-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ComposioHQ/awesome-claude-plugins"
       }
-    ],
-    "PostToolUse": [
-      {
-        "hooks": [
-          {
-            "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-context-monitor.js\"",
-            "type": "command"
-          }
-        ]
+    },
+    "claudekit-skills": {
+      "source": {
+        "source": "github",
+        "repo": "mrgoonie/claudekit-skills"
       }
-    ],
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-check-update.js\"",
-            "type": "command"
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-session-start.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/vault-memory-loader.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/pull-config-github.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/claude-remote-stop.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      },
-      {
-        "hooks": [
-          {
-            "command": "/Users/royrigamonti/.claude/hooks/sync-config-github.sh",
-            "type": "command"
-          }
-        ],
-        "matcher": "*"
-      }
-    ]
+    }
   },
-  "language": "italiano",
-  "permissions": {
-    "allow": [
-      "Bash",
-      "mcp__claude_ai_ms365__outlook_email_search",
-      "mcp__claude_ai_ms365__outlook_calendar_search",
-      "mcp__claude_ai_Slack__slack_search_public",
-      "mcp__plugin_Notion_notion__notion-search",
-      "mcp__plugin_serena_serena__write_memory",
-      "Bash(unzip:*)",
-      "Bash(python3:*)",
-      "mcp__plugin_serena_serena__list_dir",
-      "mcp__plugin_serena_serena__read_file",
-      "Bash(sed:*)",
-      "mcp__claude_ai_ms365__read_resource",
-      "Bash(python3 -c \"import subprocess; print\\(subprocess.run\\([''open'', ''--version''], capture_output=True\\).stdout\\)\")",
-      "Bash(python3 -:*)"
-    ],
-    "defaultMode": "auto"
-  },
-  "statusLine": {
-    "command": "node \"/Users/royrigamonti/.claude/hooks/gsd-statusline.js\"",
-    "type": "command"
-  }
+  "language": "italiano"
 }

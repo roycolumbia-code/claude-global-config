@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-26T08:12:02.784Z"
+    "lastUpdated": "2026-03-26T08:15:57.141Z"
   },
   "everything-claude-code": {
     "source": {
@@ -22,5 +22,21 @@
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/thedotmack",
     "lastUpdated": "2026-03-02T09:19:22.178Z"
+  },
+  "awesome-claude-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "ComposioHQ/awesome-claude-plugins"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/awesome-claude-plugins",
+    "lastUpdated": "2026-03-26T08:17:03.103Z"
+  },
+  "claudekit-skills": {
+    "source": {
+      "source": "github",
+      "repo": "mrgoonie/claudekit-skills"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claudekit-skills",
+    "lastUpdated": "2026-03-26T08:17:07.343Z"
   }
 }
