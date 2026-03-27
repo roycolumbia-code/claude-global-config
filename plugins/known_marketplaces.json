@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-27T10:58:19.125Z"
+    "lastUpdated": "2026-03-27T11:01:32.993Z"
   },
   "everything-claude-code": {
     "source": {
@@ -46,5 +46,29 @@
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/obsidian-skills",
     "lastUpdated": "2026-03-26T16:37:13.310Z"
+  },
+  "knowledge-work-plugins": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/knowledge-work-plugins"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/knowledge-work-plugins",
+    "lastUpdated": "2026-03-27T11:01:41.773Z"
+  },
+  "marketingskills": {
+    "source": {
+      "source": "github",
+      "repo": "coreyhaines31/marketingskills"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/marketingskills",
+    "lastUpdated": "2026-03-27T11:01:46.827Z"
+  },
+  "visual-explainer-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "nicobailon/visual-explainer"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/visual-explainer-marketplace",
+    "lastUpdated": "2026-03-27T11:01:51.807Z"
   }
 }

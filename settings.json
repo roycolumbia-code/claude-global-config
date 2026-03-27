@@ -1,5 +1,4 @@
 {
-  "autoDreamEnabled": true,
   "permissions": {
     "allow": [
       "Bash",
@@ -160,7 +159,11 @@
     "connect-apps@awesome-claude-plugins": true,
     "media-tools@claudekit-skills": true,
     "document-processing@claudekit-skills": true,
-    "obsidian@obsidian-skills": true
+    "obsidian@obsidian-skills": true,
+    "sales@knowledge-work-plugins": true,
+    "operations@knowledge-work-plugins": true,
+    "visual-explainer@visual-explainer-marketplace": true,
+    "marketing-skills@marketingskills": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -180,7 +183,26 @@
         "source": "github",
         "repo": "kepano/obsidian-skills"
       }
+    },
+    "knowledge-work-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/knowledge-work-plugins"
+      }
+    },
+    "marketingskills": {
+      "source": {
+        "source": "github",
+        "repo": "coreyhaines31/marketingskills"
+      }
+    },
+    "visual-explainer-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "nicobailon/visual-explainer"
+      }
     }
   },
-  "language": "italiano"
+  "language": "italiano",
+  "autoDreamEnabled": true
 }
