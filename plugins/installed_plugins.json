@@ -620,6 +620,36 @@
         "lastUpdated": "2026-03-27T15:34:57.129Z",
         "gitCommitSha": "d2ba7f65cec6502f048286b432dfee2ae59bfdff"
       }
+    ],
+    "file-safety-guard@file-safety-guard": [
+      {
+        "scope": "user",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/file-safety-guard/file-safety-guard/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-03-30T09:08:39.593Z",
+        "lastUpdated": "2026-03-30T09:08:39.593Z",
+        "gitCommitSha": "75705c74edd04c2a7b9e8ac48731d248f213a554"
+      }
+    ],
+    "image-gen@image-gen-marketplace": [
+      {
+        "scope": "user",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/image-gen-marketplace/image-gen/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-03-30T09:09:51.941Z",
+        "lastUpdated": "2026-03-30T09:09:51.941Z",
+        "gitCommitSha": "317e4be9647bef55e607db5ff4a7c04cd5c7b85f"
+      }
+    ],
+    "brand-toolkit@brand-toolkit": [
+      {
+        "scope": "user",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/brand-toolkit/brand-toolkit/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-03-30T09:10:29.565Z",
+        "lastUpdated": "2026-03-30T09:10:29.565Z",
+        "gitCommitSha": "89e59ce779c3b3fddde56ef52e852179b0cdc2d1"
+      }
     ]
   }
 }

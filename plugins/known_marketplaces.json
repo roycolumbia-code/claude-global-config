@@ -70,5 +70,29 @@
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/visual-explainer-marketplace",
     "lastUpdated": "2026-03-27T11:01:51.807Z"
+  },
+  "file-safety-guard": {
+    "source": {
+      "source": "github",
+      "repo": "jitangupta/file-safety-guard"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/file-safety-guard",
+    "lastUpdated": "2026-03-30T09:08:32.716Z"
+  },
+  "image-gen-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "harshkedia177/image-gen-plugin"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/image-gen-marketplace",
+    "lastUpdated": "2026-03-30T09:09:44.735Z"
+  },
+  "brand-toolkit": {
+    "source": {
+      "source": "directory",
+      "path": "/tmp/brand-toolkit-clone"
+    },
+    "installLocation": "/tmp/brand-toolkit-clone",
+    "lastUpdated": "2026-03-30T09:10:24.508Z"
   }
 }

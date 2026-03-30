@@ -163,7 +163,10 @@
     "sales@knowledge-work-plugins": true,
     "operations@knowledge-work-plugins": true,
     "visual-explainer@visual-explainer-marketplace": true,
-    "marketing-skills@marketingskills": true
+    "marketing-skills@marketingskills": true,
+    "file-safety-guard@file-safety-guard": true,
+    "image-gen@image-gen-marketplace": true,
+    "brand-toolkit@brand-toolkit": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -200,6 +203,24 @@
       "source": {
         "source": "github",
         "repo": "nicobailon/visual-explainer"
+      }
+    },
+    "file-safety-guard": {
+      "source": {
+        "source": "github",
+        "repo": "jitangupta/file-safety-guard"
+      }
+    },
+    "image-gen-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "harshkedia177/image-gen-plugin"
+      }
+    },
+    "brand-toolkit": {
+      "source": {
+        "source": "directory",
+        "path": "/tmp/brand-toolkit-clone"
       }
     }
   },
