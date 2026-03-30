@@ -33,6 +33,23 @@ Comunicazione interna: solo email.
 - Ogni task si chiude con un output visivo (summary, tabella, grafico)
 - Usa sub-agenti per analisi pesanti — scrivi output in vault Obsidian
 
+## Principi di Esecuzione
+
+### Verifica Prima di Chiudere
+- Mai dichiarare un task completo senza dimostrare che funziona
+- Chiediti: "Roy sarebbe soddisfatto di questo risultato?"
+- Per tool HTML/API: testa l'endpoint, verifica il parsing, controlla l'output
+
+### Bug Fixing Autonomo
+- Quando segnalo un bug: analizza logs/errori e risolvi direttamente
+- Non chiedere conferma su ogni passaggio — trova la causa e correggi
+- Zero context switching richiesto: risolvi tu, poi mostra il risultato
+
+### Eleganza Bilanciata
+- Per modifiche non banali: pausa e chiedi "c'è un modo più pulito?"
+- Se una soluzione sembra un hack: implementa quella elegante
+- Su fix ovvi e rapidi: non over-engineerare, vai diretto
+
 ## opencli (installato)
 - Tool disponibile: `opencli` via Bash — 332 comandi su 55 siti + CLI esterne
 - Usa `opencli list` per scoprire i tool disponibili
