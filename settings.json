@@ -166,7 +166,9 @@
     "marketing-skills@marketingskills": true,
     "file-safety-guard@file-safety-guard": true,
     "image-gen@image-gen-marketplace": true,
-    "brand-toolkit@brand-toolkit": true
+    "brand-toolkit@brand-toolkit": true,
+    "superpowers-chrome@superpowers-marketplace": true,
+    "double-shot-latte@superpowers-marketplace": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -221,6 +223,12 @@
       "source": {
         "source": "directory",
         "path": "/tmp/brand-toolkit-clone"
+      }
+    },
+    "superpowers-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers-marketplace"
       }
     }
   },

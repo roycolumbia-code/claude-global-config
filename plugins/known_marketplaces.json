@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-03-30T09:21:57.621Z"
+    "lastUpdated": "2026-03-30T09:23:56.011Z"
   },
   "everything-claude-code": {
     "source": {
@@ -94,5 +94,13 @@
     },
     "installLocation": "/tmp/brand-toolkit-clone",
     "lastUpdated": "2026-03-30T09:10:24.508Z"
+  },
+  "superpowers-marketplace": {
+    "source": {
+      "source": "github",
+      "repo": "obra/superpowers-marketplace"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/superpowers-marketplace",
+    "lastUpdated": "2026-03-30T09:24:00.958Z"
   }
 }
