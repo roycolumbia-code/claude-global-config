@@ -1,1 +1,0 @@
-/opt/homebrew/opt/peon-ping/libexec/scripts/lint-python-quoting.sh

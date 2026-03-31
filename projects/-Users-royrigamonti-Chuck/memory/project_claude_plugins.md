@@ -8,11 +8,8 @@ type: project
 
 ### peon-ping (Warcraft/voice notifications)
 - **Repo:** github.com/PeonPing/peon-ping — 4.259 ⭐
-- **Installato:** 2026-03-31 via `brew install PeonPing/tap/peon-ping` + `peon-ping-setup`
-- **Stato:** attivo, hooks Claude Code registrati, 5 sound pack installati
-- **Comandi utili:** `peon toggle` (muto/smuto), `peon status`
-- **Default pack:** Orc Peon; altri: glados, starcraft, zelda, portal
-- **MCP server disponibile:** `node ~/.claude/hooks/peon-ping/mcp/peon-mcp.js`
+- **Stato:** DISINSTALLATO 2026-03-31 — si attivava automaticamente in modo inatteso (voci durante lavoro)
+- **Come reinstallare se serve:** `brew install PeonPing/tap/peon-ping && peon-ping-setup`
 
 ### handoff (session continuity)
 - **Repo:** github.com/willseltzer/claude-handoff — 37 ⭐

@@ -31,14 +31,7 @@
       },
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "PostToolUse": [
@@ -89,13 +82,7 @@
       },
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10
-          }
-        ]
+        "hooks": []
       }
     ],
     "Stop": [
@@ -119,92 +106,43 @@
       },
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "SessionEnd": [
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "SubagentStart": [
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "UserPromptSubmit": [
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "PermissionRequest": [
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "PostToolUseFailure": [
       {
         "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ],
     "PreCompact": [
       {
         "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
-            "timeout": 10,
-            "async": true
-          }
-        ]
+        "hooks": []
       }
     ]
   },

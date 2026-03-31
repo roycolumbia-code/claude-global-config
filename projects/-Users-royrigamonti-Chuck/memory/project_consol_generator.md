@@ -79,6 +79,13 @@ URL: `http://192.168.1.71:8080/` (Mac Mini fisso, sempre acceso)
 - [ ] Verificare LaunchAgent separato per packing-api.py (esistente?)
 - [ ] Testare parse-invoice con più tipi di fattura oltre Cristini
 - [ ] Verificare colonne "Data Pick up" e "T/T" funzionino correttamente nel container-loader tool
+- [ ] packing-api.py: aggiungere estrazione dimensioni dal testo body dell'EML quando non c'è PDF allegato (richiesta 2026-03-31 — es. mail "New Look New LCL Shipment to Montreal.eml" in ~/Downloads/ritiri_canada/)
+
+## Note bug risolti recenti
+
+- **2026-03-31:** Evoca North PDF — gross weight mancante in tabella estratta → fix pattern tabellare Vitrifrigo/Evoca in `_parse_italian_doc()`
+- **2026-03-30:** MIME type EML mismatch → fix in canadaconsol-generator.html (detection per estensione .eml)
+- **2026-03-30:** Exception handling parse_pdf + _handle_parse → aggiunta gestione errori per PDF non validi
 
 **Why:** Canada è il mercato di espansione principale 2026 — questi tool sono usati da tutto il team operativo.
 **How to apply:** Quando Roy chiede aggiornamenti ai tool Canada, sempre consultare questa lista di files e porte prima di modificare.

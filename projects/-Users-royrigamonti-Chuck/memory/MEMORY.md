@@ -2,15 +2,14 @@
 
 ## Feedback
 
-- [feedback_servotecnica.md](feedback_servotecnica.md) — Workflow /servotecnica: skill + mail in una chiamata, output immediato senza interazione
-
-- [feedback_output_tracking.md](feedback_output_tracking.md) — Ogni output definitivo va registrato in MEMORY.md del vault Obsidian; analisi → sempre HTML dark theme
-
-- [feedback_icloud_output.md](feedback_icloud_output.md) — Dopo ogni skill con file di output, chiedere se copiare su iCloud Drive per iPhone
+- [feedback_servotecnica.md](feedback_servotecnica.md) — /servotecnica: incolla mail cinese direttamente, output immediato senza interazione intermedia
+- [feedback_output_tracking.md](feedback_output_tracking.md) — Ogni output definitivo → aggiorna MEMORY.md vault Obsidian; analisi → HTML dark theme di default
+- [feedback_icloud_output.md](feedback_icloud_output.md) — Dopo file HTML/PDF di output, chiedere sempre se copiare su iCloud Drive per iPhone
 
 ## Project
 
-- [project_consol_generator.md](project_consol_generator.md) — Canada Tools Suite: tutti i tool HTML+API (consol, packing, hs-classifier, container-loader), porte, LaunchAgents, template Excel aggiornati al 2026-03-30
+- [project_consol_generator.md](project_consol_generator.md) — Canada Tools Suite: HTML+API (consol/packing/hs-classifier/container-loader), porte, LaunchAgents, bug fix recenti, todo aperti
+- [project_claude_plugins.md](project_claude_plugins.md) — Plugin installati: peon-ping (voice notifications, attivo), handoff (session continuity, attivo), call-me (telefono, non installato — richiede Telnyx)
 
 ## Reference
 
