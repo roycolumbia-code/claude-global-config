@@ -174,10 +174,10 @@
     "hookify@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/hookify/020cc8266e8e",
-        "version": "020cc8266e8e",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/hookify/ef3ba29306a4",
+        "version": "ef3ba29306a4",
         "installedAt": "2026-02-12T14:19:40.563Z",
-        "lastUpdated": "2026-03-31T09:09:06.972Z",
+        "lastUpdated": "2026-03-31T09:16:55.785Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -264,10 +264,10 @@
     "playground@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playground/020cc8266e8e",
-        "version": "020cc8266e8e",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playground/ef3ba29306a4",
+        "version": "ef3ba29306a4",
         "installedAt": "2026-02-12T14:20:11.332Z",
-        "lastUpdated": "2026-03-31T09:09:06.960Z",
+        "lastUpdated": "2026-03-31T09:16:55.723Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -284,20 +284,20 @@
     "plugin-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/plugin-dev/020cc8266e8e",
-        "version": "020cc8266e8e",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/plugin-dev/ef3ba29306a4",
+        "version": "ef3ba29306a4",
         "installedAt": "2026-02-12T14:20:13.833Z",
-        "lastUpdated": "2026-03-31T09:09:06.987Z",
+        "lastUpdated": "2026-03-31T09:16:55.832Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "pr-review-toolkit@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/020cc8266e8e",
-        "version": "020cc8266e8e",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/ef3ba29306a4",
+        "version": "ef3ba29306a4",
         "installedAt": "2026-02-12T14:20:16.076Z",
-        "lastUpdated": "2026-03-31T09:09:06.958Z",
+        "lastUpdated": "2026-03-31T09:16:55.717Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
