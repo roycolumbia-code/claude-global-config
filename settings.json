@@ -28,6 +28,17 @@
             "command": "/Users/royrigamonti/.claude/hooks/claude-remote-notification.sh"
           }
         ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -75,6 +86,16 @@
             "command": "/Users/royrigamonti/.claude/hooks/pull-config-github.sh"
           }
         ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
       }
     ],
     "Stop": [
@@ -93,6 +114,95 @@
           {
             "type": "command",
             "command": "/Users/royrigamonti/.claude/hooks/sync-config-github.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10,
+            "async": true
           }
         ]
       }
@@ -168,7 +278,8 @@
     "image-gen@image-gen-marketplace": true,
     "brand-toolkit@brand-toolkit": true,
     "superpowers-chrome@superpowers-marketplace": true,
-    "double-shot-latte@superpowers-marketplace": true
+    "double-shot-latte@superpowers-marketplace": true,
+    "handoff@handoff-marketplace": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -229,6 +340,12 @@
       "source": {
         "source": "github",
         "repo": "obra/superpowers-marketplace"
+      }
+    },
+    "handoff-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "willseltzer/claude-handoff"
       }
     }
   },
