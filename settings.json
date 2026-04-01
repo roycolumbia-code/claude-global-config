@@ -20,6 +20,17 @@
   },
   "model": "opusplan",
   "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node /Users/royrigamonti/.claude/plugins/claude-code-safety-net/dist/bin/cc-safety-net.js --claude-code"
+          }
+        ]
+      }
+    ],
     "Notification": [
       {
         "matcher": "*",
