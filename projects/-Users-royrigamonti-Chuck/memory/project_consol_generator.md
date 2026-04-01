@@ -34,13 +34,23 @@ type: project
   → /opt/anaconda3/bin/python3 consol-api.py  (porta 8766)
   → log: /tmp/consol-api.log
 
+~/Library/LaunchAgents/com.columbia.packing-api.plist
+  → /opt/anaconda3/bin/python3 packing-api.py  (porta 8767)
+  → RunAtLoad: true, KeepAlive: true
+  → log: /tmp/packing-api.log
+
 ~/Library/LaunchAgents/com.columbia.containerloader.plist
   → /usr/bin/python3 -m http.server 8080  (server statico HTML)
   → log: /tmp/containerloader.log
   → workdir: /Users/royrigamonti/chuck/Canada
+
+~/Library/LaunchAgents/com.columbia.map-wallpaper.plist
+  → /usr/bin/python3 map-wallpaper.py  (ore 08:00 ogni giorno)
+  → RunAtLoad: false
+  → log: /tmp/map-wallpaper.log
 ```
 
-**Nota critica Anaconda:** consol-api.plist usa `/opt/anaconda3/bin/python3` — se si ripristina su un altro Mac, Anaconda DEVE essere installato sullo stesso path. packing-api.py usa invece path separato (LaunchAgent packing-api da verificare).
+**Nota critica Anaconda:** consol-api.plist e packing-api.plist usano `/opt/anaconda3/bin/python3` — se si ripristina su un altro Mac, Anaconda DEVE essere installato sullo stesso path.
 
 ## Come riavviare le API
 
@@ -74,16 +84,42 @@ pkill -f packing-api.py && cd /Users/royrigamonti/chuck/Canada && /opt/anaconda3
 
 URL: `http://192.168.1.71:8080/` (Mac Mini fisso, sempre acceso)
 
+## Template consol-api (stato attuale)
+
+`BASE = os.path.dirname(os.path.abspath(__file__))` → `/Users/royrigamonti/chuck/Canada/`
+- `LL_TPL` → `Canada/Consol_Load_List_Template.xlsx`
+- `CR_TPL` → `Canada/Consol_Report_Template.xlsx`
+
+**Nota:** i template erano stati cercati in `~/Downloads/canada_3/` — ora sono in `/chuck/Canada/` (fix 2026-04-01).
+
+## Funzionalità OCR (aggiunta 2026-03-31)
+
+- `tesseract` 5.5.2 installato via Homebrew a `/opt/homebrew/bin/tesseract`
+- `pytesseract` + `pdf2image` installati con pip (Anaconda)
+- Attivato: PDF scansionati senza layer testo → fallback OCR automatico (`lang='ita+eng'`)
+- `_dedup_ocr()` corregge artefatto "doubled chars" dei PDF scansionati (ELENKA → EELLEENNKKAA)
+
+## EML body fallback per dimensioni (aggiunta 2026-03-31)
+
+- Quando nessun PDF/DOCX allegato ha le dimensioni, `parse_eml()` legge il body text/plain
+- Regex estrae dimensioni da testi tipo "1 CASSA 120x80x90 CM PB 350 KG"
+- Merge finale: `_merge_eml_rows()` unifica righe duplicate da invoice + packing list dello stesso EML
+
+## File accessori Canada
+
+- `mandato-di-ritiro.xlsx` — form Excel da mandare ai mittenti per raccogliere dimensioni/peso; "COLUMBIA TRANSPORT" in rosso caps, niente logo, niente mittente/riferimento
+
 ## Todo aperti
 
-- [ ] Verificare LaunchAgent separato per packing-api.py (esistente?)
 - [ ] Testare parse-invoice con più tipi di fattura oltre Cristini
 - [ ] Verificare colonne "Data Pick up" e "T/T" funzionino correttamente nel container-loader tool
-- [ ] packing-api.py: aggiungere estrazione dimensioni dal testo body dell'EML quando non c'è PDF allegato (richiesta 2026-03-31 — es. mail "New Look New LCL Shipment to Montreal.eml" in ~/Downloads/ritiri_canada/)
 
 ## Note bug risolti recenti
 
+- **2026-04-01:** consol-api CR_TPL/LL_TPL puntavano a `~/Downloads/canada_3/` (non esistente) → corretto a `BASE` (stessa dir di consol-api.py)
 - **2026-03-31:** Evoca North PDF — gross weight mancante in tabella estratta → fix pattern tabellare Vitrifrigo/Evoca in `_parse_italian_doc()`
+- **2026-03-31:** PDF scansionati (es. scanlmage2052.pdf) senza layer testo → aggiunto fallback OCR con tesseract
+- **2026-03-31:** EML multi-file (ritiri_canada_1, 4 EML) estraeva solo 1 riga → fix merge/loop su allegati multipli
 - **2026-03-30:** MIME type EML mismatch → fix in canadaconsol-generator.html (detection per estensione .eml)
 - **2026-03-30:** Exception handling parse_pdf + _handle_parse → aggiunta gestione errori per PDF non validi
 
