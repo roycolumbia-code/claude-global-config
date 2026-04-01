@@ -31,6 +31,28 @@ type: project
 - Aggiornato: 2026-03-31 — aggiunta **Fonte A (Anthropic Ufficiale)** come prima fonte prioritaria
 - Fonti attive: A=Anthropic ufficiale (changelog+releases), B=Google, C=HackerNews, D=GitHub API
 - Output sempre include sezione `📣 Aggiornamenti Ufficiali Anthropic` in cima
+- Output mandato su Slack canale `D0AHK8Z5Q05` (DM Roy)
 
 **Why:** La fonte ufficiale Anthropic era assente — rischio di vedere novità community ma perdere release notes critiche.
 **How to apply:** In `/newsclaude`, sempre leggere changelog GitHub di `anthropics/claude-code` come primo step, prima di cercare community plugins.
+
+## /updates skill (creata 2026-03-31)
+
+- File: `/Users/royrigamonti/Chuck/.claude/skills/updates/SKILL.md`
+- Cosa fa: controlla tutti i plugin Claude Code + ruFlo per aggiornamenti, li installa autonomamente
+- Schedulato ogni **lunedì ore 08:00** via `it.columbiatransport.claude-monday` LaunchAgent
+- LaunchAgent: `/Users/royrigamonti/Library/LaunchAgents/it.columbiatransport.claude-monday.plist`
+- Comando: `claude --dangerously-skip-permissions -p "Esegui /updates ..."`
+- Log: `/tmp/claude-monday-updates.log`
+
+## ruFlo (claude-flow)
+
+- Versione attuale: **v3.5.48** (aggiornato 2026-03-31)
+- Configurato via `~/Chuck/.mcp.json` con `@latest`
+- npx cache: `~/.npm/_npx/2ed56890c96f58f7/node_modules/@claude-flow/cli/`
+
+## Integrazione Slack
+
+- Connector UUID: `e365ebe0-705c-46e4-a626-603a5f7d5f30`
+- DM channel Roy: `D0AHK8Z5Q05`
+- Usato da: /newsclaude (report settimanale), notifiche email filtrate
