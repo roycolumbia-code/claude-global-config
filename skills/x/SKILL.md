@@ -108,7 +108,25 @@ Se l'email suggerisce di installare un nuovo MCP server via npm/pip:
 
 ---
 
-## Step 4 — Invia DM Slack a Roy
+## Step 4 — Marca le email come lette
+
+Per ogni email processata negli step precedenti (HIGH, MEDIUM e LOW — tutte quelle lette), marca il thread come letto rimuovendo la label `UNREAD`:
+
+```python
+# Per ogni messaggio con threadId estratto da gmail_search_messages:
+mcp__plugin_sales_gmail__gmail_modify_thread(
+    thread_id="<threadId>",
+    remove_label_ids=["UNREAD"]
+)
+```
+
+- Esegui per **tutte** le email analizzate, indipendentemente dalla priorità assegnata
+- Se `gmail_modify_thread` non è disponibile, usa `gmail_read_message` (la lettura del messaggio lo marca come letto in alcuni client — ma preferire il tool esplicito)
+- Errori su singoli thread non bloccano il flusso — logga nel recap Slack come nota
+
+---
+
+## Step 5 — Invia DM Slack a Roy
 
 Usa `mcp__plugin_slack_slack__slack_search_users` per trovare Roy se il suo ID non è noto.
 Poi usa `mcp__plugin_slack_slack__slack_send_message`.
