@@ -29,6 +29,15 @@
             "command": "node /Users/royrigamonti/.claude/plugins/claude-code-safety-net/dist/bin/cc-safety-net.js --claude-code"
           }
         ]
+      },
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/royrigamonti/.claude/hooks/protect-files.sh"
+          }
+        ]
       }
     ],
     "Notification": [
@@ -300,5 +309,6 @@
     }
   },
   "language": "italiano",
-  "autoDreamEnabled": true
+  "autoDreamEnabled": true,
+  "skipDangerousModePermissionPrompt": true
 }
