@@ -62,8 +62,17 @@ type: project
 - npx cache: `~/.npm/_npx/85fb20e3e7e3a233/node_modules/@claude-flow/cli/` (path cambia ad ogni update)
 - Per trovare la versione in cache: `find ~/.npm/_npx -name "package.json" -path "*/@claude-flow/cli/package.json"`
 
+## /x skill — Morning Intelligence Feed (creata 2026-04-07)
+
+- File: `~/.claude/skills/x/SKILL.md`
+- Cosa fa: legge Gmail per email da `roy.rigamonti@gmail.com` con keyword `claude/skill/hook/agent/mcp/setup/automation`, valuta importanza (LOW/MEDIUM/HIGH), installa MEDIUM+HIGH in autonomia, invia DM Slack con recap
+- Gmail account connesso: `roycolumbia@gmail.com` (non Outlook — originariamente richiesto per Outlook ma implementato via Gmail MCP)
+- Flusso self-send Roy: manda email da `roy.rigamonti@gmail.com` → `roycolumbia@gmail.com` con idee/skill/hook → `/x` le processa
+- **Nota:** al primo run (07/04/2026) nessuna email rilevante trovata — solo 2 forward hotel del 2016
+
 ## Integrazione Slack
 
 - Connector UUID: `e365ebe0-705c-46e4-a626-603a5f7d5f30`
+- User ID Roy: `U0AHS9QV8TE`
 - DM channel Roy: `D0AHK8Z5Q05`
-- Usato da: /newsclaude (report settimanale), notifiche email filtrate
+- Usato da: /newsclaude (report settimanale), /x (morning feed), notifiche email filtrate
