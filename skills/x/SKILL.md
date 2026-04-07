@@ -1,18 +1,21 @@
 ---
 name: x
-description: "Morning intelligence feed. Legge Gmail (roy.rigamonti@gmail.com) per email su Claude, skill, hook, agent, setup. Valuta importanza in autonomia e installa media/alta priorità senza chiedere. Chiude con DM Slack a Roy con recap completo. Usa quando invocato con /x o dal LaunchAgent mattutino delle 08:15."
+description: "Morning intelligence feed. Roy inoltra da iPhone post X / link / contenuti da roy.rigamonti@gmail.com a roy@columbiatransport.it. Legge quelle mail, valuta l'utilità per Claude Code (skill/hook/agent/MCP), installa in autonomia i contenuti validi, marca le mail come lette in Outlook, chiude con DM Slack a Roy. Usa quando invocato con /x o dal LaunchAgent mattutino delle 08:15."
 ---
 
 # Skill: /x — Morning Intelligence Feed
 
 ## Scopo
 
-Ogni mattina (o su invocazione manuale `/x`) esegue in autonomia:
+Roy usa il pattern: legge X → trova qualcosa di interessante su Claude/AI → inoltra da iPhone (roy.rigamonti@gmail.com → roy@columbiatransport.it).
 
-1. Legge Gmail per email rilevanti
-2. Valuta ogni email (LOW / MEDIUM / HIGH)
+Ogni mattina (o su invocazione manuale `/x`) questa skill:
+
+1. Legge tutte le email inoltrate da roy.rigamonti@gmail.com nelle ultime 24h
+2. Valuta ogni email (LOW / MEDIUM / HIGH) in base al contenuto
 3. Installa automaticamente i contenuti MEDIUM e HIGH
-4. Invia DM Slack a Roy con il recap
+4. Marca le email come lette in Outlook (roy@columbiatransport.it)
+5. Invia DM Slack a Roy con il recap
 
 ---
 
@@ -21,21 +24,27 @@ Ogni mattina (o su invocazione manuale `/x`) esegue in autonomia:
 Usa il plugin Gmail MCP. Se non autenticato, esegui prima l'autenticazione:
 - Tool: `mcp__plugin_sales_gmail__authenticate`
 
-Cerca email con questi criteri:
-- **Mittente**: from:roy.rigamonti@gmail.com
-- **Data**: ultime 24 ore (o dall'ultimo run se disponibile)
-- **Keywords** in oggetto o corpo: `claude`, `skill`, `hook`, `agent`, `mcp`, `plugin`, `setup`, `config`, `automation`, `prompt`, `tool`
+Cerca **tutte** le email inoltrate da Roy senza filtro keyword:
+```
+from:roy.rigamonti@gmail.com newer_than:1d
+```
+
+> Nessun filtro per oggetto o keyword — Roy inoltra qualsiasi contenuto ritenga interessante. La valutazione avviene nel Step 2.
 
 Per ogni email trovata estrai:
 - Oggetto
 - Corpo (testo completo)
+- URL inclusi nel corpo
 - Eventuali allegati .md / .json / codice inline
+- `messageId` e `threadId` (servono per Outlook nel Step 4)
+
+Se il corpo contiene un URL GitHub o X, usa `WebFetch` o `Bash curl` per recuperare il contenuto della pagina e valutarlo meglio.
 
 ---
 
 ## Step 2 — Valuta l'importanza
 
-Per ogni email assegna un punteggio:
+Per ogni email assegna un punteggio basandoti sul **contenuto reale**, non sull'oggetto:
 
 ### HIGH — Installa subito
 - Contiene codice completo di una skill (frontmatter YAML + istruzioni)
@@ -44,16 +53,17 @@ Per ogni email assegna un punteggio:
 - Contiene un blocco JSON di configurazione MCP
 
 ### MEDIUM — Installa se chiaro
+- Link a repo GitHub con tool/plugin rilevante per Claude Code (vai a leggere il README)
 - Concept di skill con abbastanza dettagli per implementare
 - Idea di hook con trigger e azione definiti
-- Link a strumento/plugin con istruzioni d'uso
 - Template o snippet riutilizzabile
+- Post X con istruzioni pratiche su Claude/AI tools
 
 ### LOW — Solo nota nel recap
+- Link a post X non accessibile senza login (status 402/401)
 - Idee vaghe senza implementazione
-- Link senza contesto
-- Promemoria generici
-- Cose già installate
+- Contenuti già installati
+- Argomenti non correlati a Claude/AI/automazione
 
 ---
 
@@ -108,64 +118,62 @@ Se l'email suggerisce di installare un nuovo MCP server via npm/pip:
 
 ---
 
-## Step 4 — Marca le email come lette
+## Step 4 — Marca le email come lette in Outlook
 
-Per ogni email processata negli step precedenti (HIGH, MEDIUM e LOW — tutte quelle lette), marca il thread come letto rimuovendo la label `UNREAD`:
+Le email arrivano nella inbox di roy@columbiatransport.it (Outlook / Microsoft 365).
+Usa il plugin MS365 MCP per marcarle come lette.
 
-```python
-# Per ogni messaggio con threadId estratto da gmail_search_messages:
-mcp__plugin_sales_gmail__gmail_modify_thread(
-    thread_id="<threadId>",
-    remove_label_ids=["UNREAD"]
-)
+### Autenticazione
+Se non autenticato:
+```
+mcp__plugin_sales_ms365__authenticate()
 ```
 
-- Esegui per **tutte** le email analizzate, indipendentemente dalla priorità assegnata
-- Se `gmail_modify_thread` non è disponibile, usa `gmail_read_message` (la lettura del messaggio lo marca come letto in alcuni client — ma preferire il tool esplicito)
-- Errori su singoli thread non bloccano il flusso — logga nel recap Slack come nota
+### Trova e marca le email
+Dopo l'autenticazione, cerca i messaggi corrispondenti nella inbox Outlook usando oggetto + data, e marcali come letti.
+
+- Esegui per **tutte** le email analizzate (HIGH, MEDIUM e LOW)
+- Errori su singoli messaggi non bloccano il flusso — logga nel recap Slack
 
 ---
 
 ## Step 5 — Invia DM Slack a Roy
 
-Usa `mcp__plugin_slack_slack__slack_search_users` per trovare Roy se il suo ID non è noto.
-Poi usa `mcp__plugin_slack_slack__slack_send_message`.
-
-**Canale/destinatario**: cerca user con nome "Roy" o "roy.rigamonti" nel workspace.
+Canale/destinatario: `D0AHK8Z5Q05` (ID diretto Roy, già noto).
+Usa `mcp__plugin_slack_slack__slack_send_message`.
 
 **Formato del messaggio DM:**
 
 ```
-🔍 *Morning Intelligence Feed* — [DATA]
+Morning Intelligence Feed — [DATA]
 
-*Email analizzate:* [N]
-*Installati:* [N] • *Saltati (LOW):* [N]
+Email analizzate: [N] | Installati: [N] | Saltati LOW: [N] | Richiede conferma: [N]
 
----
-*✅ INSTALLATI:*
-• [nome-skill] — Skill creata in ~/.claude/skills/[slug]/
-• [nome-hook] — Hook aggiunto a settings.json
-• ...
+INSTALLATI:
+- [nome-skill] — Skill creata in ~/.claude/skills/[slug]/
+- [nome-hook] — Hook aggiunto a settings.json
 
-*⏭️ SALTATI (LOW):*
-• "[oggetto email]" — motivo breve
-• ...
+SALTATI (LOW):
+- "[oggetto email]" — motivo breve
 
-*⚠️ RICHIEDE CONFERMA:*
-• MCP: [nome] — `[comando da eseguire]`
+RICHIEDE CONFERMA:
+- MCP: [nome] — comando: [comando da eseguire]
 ```
 
-Se non ci sono email rilevanti:
+Se non ci sono email:
 ```
-🔍 *Morning Intelligence Feed* — [DATA]
-Nessuna email rilevante nelle ultime 24h.
+Morning Intelligence Feed — [DATA]
+Nessuna email inoltrata nelle ultime 24h.
 ```
 
 ---
 
 ## Note operative
 
-- **Idempotente**: prima di installare, controlla se la skill/hook esiste già. Se esiste e il contenuto è uguale, skip. Se è un aggiornamento, sovrascrivi e segnala nel recap.
-- **Nessuna interazione**: non chiedere conferma a meno di MCP npm install
-- **Log errori nel recap**: se un'installazione fallisce, segnalalo nel DM Slack invece di bloccarsi
+- **Nessun filtro keyword nella ricerca** — ogni email da roy.rigamonti@gmail.com viene letta e valutata
+- **Fetch URL** — se l'email contiene un link GitHub/Reddit/HN, vai a leggerlo prima di valutare
+- **Post X non accessibili** → LOW automaticamente (status 402 senza login)
+- **Idempotente**: prima di installare, controlla se la skill/hook esiste già. Se esiste e il contenuto è uguale, skip.
+- **Nessuna interazione**: non chiedere conferma a meno di MCP npm/pip install
+- **Log errori nel recap**: se un'installazione fallisce, segnalalo nel DM Slack
 - **Timezone**: Roy è in Europe/Rome
