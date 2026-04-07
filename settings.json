@@ -16,7 +16,7 @@
       "Bash(python3 -c \"import subprocess; print\\(subprocess.run\\([''open'', ''--version''], capture_output=True\\).stdout\\)\")",
       "Bash(python3 -:*)"
     ],
-    "defaultMode": "auto"
+    "defaultMode": "bypassPermissions"
   },
   "model": "opusplan",
   "hooks": {
