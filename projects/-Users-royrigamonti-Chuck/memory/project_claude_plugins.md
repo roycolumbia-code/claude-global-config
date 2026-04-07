@@ -45,11 +45,22 @@ type: project
 - Comando: `claude --dangerously-skip-permissions -p "Esegui /updates ..."`
 - Log: `/tmp/claude-monday-updates.log`
 
+### Note operative /updates (da 2026-04-06)
+
+**Problema:** `claude plugin list/update` fallisce dentro sessione Claude Code (`--enable-auto-mode` flag).
+**Workaround:** usare `env -i PATH="$PATH" HOME="$HOME" claude plugin <cmd>` — bypassa l'env contaminato.
+
+**53 plugin con "not found":** I plugin di `claude-plugins-official` (es. vercel, superpowers, figma, playwright, context7…) restituiscono "Plugin X not found" su update. Non è un errore critico — i plugin funzionano regolarmente, ma il marketplace li ha rinominati o riorganizzati. Non rimuoverli senza conferma Roy.
+
+**16 plugin aggiornabili** da marketplace alternativi (awesome-claude-plugins, thedotmack, superpowers-marketplace, ecc.) — questi si aggiornano normalmente.
+
 ## ruFlo (claude-flow)
 
-- Versione attuale: **v3.5.48** (aggiornato 2026-03-31)
+- Versione attuale: **v3.5.51** (aggiornato 2026-04-06)
+- Versione precedente: v3.5.48 (2026-03-31)
 - Configurato via `~/Chuck/.mcp.json` con `@latest`
-- npx cache: `~/.npm/_npx/2ed56890c96f58f7/node_modules/@claude-flow/cli/`
+- npx cache: `~/.npm/_npx/85fb20e3e7e3a233/node_modules/@claude-flow/cli/` (path cambia ad ogni update)
+- Per trovare la versione in cache: `find ~/.npm/_npx -name "package.json" -path "*/@claude-flow/cli/package.json"`
 
 ## Integrazione Slack
 

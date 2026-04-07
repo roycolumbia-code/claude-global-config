@@ -9,7 +9,7 @@
 ## Project
 
 - [project_consol_generator.md](project_consol_generator.md) — Canada Tools Suite: HTML+API (consol/packing/hs-classifier/container-loader), porte, LaunchAgents, OCR, EML body, template path, bug fix recenti
-- [project_claude_plugins.md](project_claude_plugins.md) — Plugin: handoff (attivo), peon-ping (rimosso), call-me (non inst.); /updates + /newsclaude schedulati lun 08:00; Slack connector; ruFlo v3.5.48
+- [project_claude_plugins.md](project_claude_plugins.md) — Plugin: handoff (attivo), peon-ping (rimosso); /updates + /newsclaude lun 08:00; ruFlo v3.5.51; 53 plugin @official "not found" (workaround env -i)
 - [project_map_wallpaper.md](project_map_wallpaper.md) — map-wallpaper.py: sfondo Mac giornaliero con tile OSM, LaunchAgent 08:00, fix osascript timeout 2026-04-01
 
 ## Reference
