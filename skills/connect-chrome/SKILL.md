@@ -1,0 +1,1 @@
+/Users/royrigamonti/.claude/skills/gstack/connect-chrome/SKILL.md

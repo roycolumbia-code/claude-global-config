@@ -1,0 +1,1 @@
+/Users/royrigamonti/.claude/skills/gstack/plan-ceo-review/SKILL.md
