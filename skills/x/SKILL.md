@@ -120,20 +120,13 @@ Se l'email suggerisce di installare un nuovo MCP server via npm/pip:
 
 ## Step 4 — Marca le email come lette in Outlook
 
-Le email arrivano nella inbox di roy@columbiatransport.it (Outlook / Microsoft 365).
-Usa il plugin MS365 MCP per marcarle come lette.
+Le email vengono marcate come lette automaticamente tramite una **regola Outlook** configurata una volta sola:
 
-### Autenticazione
-Se non autenticato:
-```
-mcp__plugin_sales_ms365__authenticate()
-```
+> Regola: mittente è `roy.rigamonti@gmail.com` → azione: segna come letto
 
-### Trova e marca le email
-Dopo l'autenticazione, cerca i messaggi corrispondenti nella inbox Outlook usando oggetto + data, e marcali come letti.
+Setup (una tantum via Outlook web → Impostazioni → Posta → Regole → Nuova regola).
 
-- Esegui per **tutte** le email analizzate (HIGH, MEDIUM e LOW)
-- Errori su singoli messaggi non bloccano il flusso — logga nel recap Slack
+**Nota:** il plugin MS365 MCP non è utilizzabile per questa operazione (OAuth redirect URI dinamici non registrati nell'Azure app). La regola Outlook è la soluzione definitiva — nessuna azione richiesta a ogni run.
 
 ---
 
