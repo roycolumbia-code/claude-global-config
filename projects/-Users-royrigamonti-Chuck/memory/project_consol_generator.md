@@ -109,6 +109,19 @@ URL: `http://192.168.1.71:8080/` (Mac Mini fisso, sempre acceso)
 
 - `mandato-di-ritiro.xlsx` — form Excel da mandare ai mittenti per raccogliere dimensioni/peso; "COLUMBIA TRANSPORT" in rosso caps, niente logo, niente mittente/riferimento
 
+## Funzionalità BeOne PDF import (aggiunta 2026-04-07)
+
+- **POST /parse-beone** — parsa PDF BeOne nativi (porta 8766)
+  - `Lista di Carico Magazzino` (tipo `lista_carico`): estrae header consolidamento + righe shipper
+  - `Cargo Manifest` (tipo `cargo_manifest`): estrae HBL numbers + shipper/consignee
+- **Tab "🏭 BeOne PDF"** in canadaconsol-generator.html: drop zone per F2N + F2O/F1C
+  - F2N → auto-popola form header (grp, vessel, ets, pol, pod, cno, seal, carrier) + `grouped`
+  - F2O/F1C → se `grouped` esistente: aggiunge HBL numbers per posizione; altrimenti usa come sorgente
+- Naming convention BeOne: `YYYYMMDD` + `F` + n° consol + tipo (`N`=Lista Carico, `O`=Manifest, `C`=Manifest email)
+- Cartelle input: `~/Downloads/pdfbeone/` (BeOne export) e `~/Downloads/pdfemail/` (arrivati via email)
+- Parser usa `pdfplumber.extract_tables()` — tabelle native BeOne, non text regex
+- Dati EML in pdfemail già gestiti da packing-api (porta 8767)
+
 ## Todo aperti
 
 - [ ] Testare parse-invoice con più tipi di fattura oltre Cristini
