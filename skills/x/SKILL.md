@@ -38,7 +38,17 @@ Per ogni email trovata estrai:
 - Eventuali allegati .md / .json / codice inline
 - `messageId` e `threadId` (servono per Outlook nel Step 4)
 
-Se il corpo contiene un URL GitHub o X, usa `WebFetch` o `Bash curl` per recuperare il contenuto della pagina e valutarlo meglio.
+Per ogni URL trovato nel corpo dell'email:
+- **URL GitHub** → `WebFetch` o `curl` sul README per leggere il contenuto
+- **URL X/Twitter** → usa `opencli twitter` per leggere il post (riusa la sessione Chrome):
+  ```bash
+  # Estrai l'ID del tweet dall'URL (es. status/1234567890)
+  opencli twitter article <tweet_id>
+  # oppure: cerca il testo del tweet
+  opencli twitter search "<testo visibile nell'URL o snippet>"
+  ```
+  Se opencli non è connesso (Browser Bridge non attivo), classifica come LOW e segnala nel recap.
+- **URL Reddit/HN** → `WebFetch` diretto (no login richiesto)
 
 ---
 
@@ -165,7 +175,7 @@ Nessuna email inoltrata nelle ultime 24h.
 
 - **Nessun filtro keyword nella ricerca** — ogni email da roy.rigamonti@gmail.com viene letta e valutata
 - **Fetch URL** — se l'email contiene un link GitHub/Reddit/HN, vai a leggerlo prima di valutare
-- **Post X non accessibili** → LOW automaticamente (status 402 senza login)
+- **Post X** → usa `opencli twitter article <id>` per leggere il contenuto prima di valutare. Solo se opencli non è connesso (Browser Bridge offline) → LOW con nota nel recap
 - **Idempotente**: prima di installare, controlla se la skill/hook esiste già. Se esiste e il contenuto è uguale, skip.
 - **Nessuna interazione**: non chiedere conferma a meno di MCP npm/pip install
 - **Log errori nel recap**: se un'installazione fallisce, segnalalo nel DM Slack
