@@ -8,8 +8,8 @@
 
 ## Project
 
-- [project_consol_generator.md](project_consol_generator.md) — Canada Tools Suite: HTML+API (consol/packing/hs-classifier/container-loader), porte, LaunchAgents, OCR, EML body, template path, bug fix recenti
-- [project_claude_plugins.md](project_claude_plugins.md) — Plugin: handoff; /updates lun 08:00; /newsclaude; /x (Morning Feed Gmail→Slack); ruFlo v3.5.51; 53 plugin "not found" (workaround env -i); Slack DM D0AHK8Z5Q05
+- [project_consol_generator.md](project_consol_generator.md) — Canada Tools Suite: HTML+API (consol/packing/hs-classifier/container-loader), porte, LaunchAgents, OCR, EML body, BeOne PDF import
+- [project_claude_plugins.md](project_claude_plugins.md) — Plugin: handoff; /updates lun 08:00; /newsclaude; /x (Morning Feed Gmail→Slack); ruFlo v3.5.75; 2 plugin con errori (Notion, brand-toolkit); Slack DM D0AHK8Z5Q05
 - [project_map_wallpaper.md](project_map_wallpaper.md) — map-wallpaper.py: sfondo Mac giornaliero con tile OSM, LaunchAgent 08:00, fix osascript timeout 2026-04-01
 
 ## Reference

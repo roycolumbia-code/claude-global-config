@@ -25,6 +25,16 @@ type: project
 - **Cosa fa:** Claude chiama al telefono/smartwatch quando ha bisogno di input mentre Roy è lontano dal Mac
 - **Why:** molto utile per task lunghi in autonomia (analisi, parsing, tool dev)
 
+## Stato plugin al 2026-04-08
+
+- **Totale installati:** 67 (65 attivi + 2 con errori)
+- **Plugin con errori persistenti** (non aggiornabili, non rimuovere senza conferma Roy):
+  - `Notion@claude-plugins-official` — "Plugin Notion not found in marketplace"
+  - `brand-toolkit@brand-toolkit` — "Plugin brand-toolkit not found in marketplace"
+- **Tutti gli altri (65):** aggiornabili normalmente con `claude plugin update "<id-completo>"`
+
+**Nota sul workaround `env -i`:** serviva in sessioni automatizzate (LaunchAgent) dove l'ambiente era contaminato. In sessioni normali Claude Code, `claude plugin update` funziona direttamente senza workaround.
+
 ## /newsclaude skill — stato aggiornato
 
 - File: `/Users/royrigamonti/Chuck/.claude/skills/newsclaude/SKILL.md`
@@ -34,7 +44,6 @@ type: project
 - Output mandato su Slack canale `D0AHK8Z5Q05` (DM Roy)
 
 **Why:** La fonte ufficiale Anthropic era assente — rischio di vedere novità community ma perdere release notes critiche.
-**How to apply:** In `/newsclaude`, sempre leggere changelog GitHub di `anthropics/claude-code` come primo step, prima di cercare community plugins.
 
 ## /updates skill (creata 2026-03-31)
 
@@ -45,22 +54,19 @@ type: project
 - Comando: `claude --dangerously-skip-permissions -p "Esegui /updates ..."`
 - Log: `/tmp/claude-monday-updates.log`
 
-### Note operative /updates (da 2026-04-06)
-
-**Problema:** `claude plugin list/update` fallisce dentro sessione Claude Code (`--enable-auto-mode` flag).
-**Workaround:** usare `env -i PATH="$PATH" HOME="$HOME" claude plugin <cmd>` — bypassa l'env contaminato.
-
-**53 plugin con "not found":** I plugin di `claude-plugins-official` (es. vercel, superpowers, figma, playwright, context7…) restituiscono "Plugin X not found" su update. Non è un errore critico — i plugin funzionano regolarmente, ma il marketplace li ha rinominati o riorganizzati. Non rimuoverli senza conferma Roy.
-
-**16 plugin aggiornabili** da marketplace alternativi (awesome-claude-plugins, thedotmack, superpowers-marketplace, ecc.) — questi si aggiornano normalmente.
-
 ## ruFlo (claude-flow)
 
-- Versione attuale: **v3.5.51** (aggiornato 2026-04-06)
-- Versione precedente: v3.5.48 (2026-03-31)
-- Configurato via `~/Chuck/.mcp.json` con `@latest`
-- npx cache: `~/.npm/_npx/85fb20e3e7e3a233/node_modules/@claude-flow/cli/` (path cambia ad ogni update)
+- **Versione attuale: v3.5.75** (confermato 2026-04-08 via `npx @claude-flow/cli@latest --version`)
+- Versione precedente: v3.5.51 (2026-04-06)
+- Configurato via `~/Chuck/.mcp.json` con `@claude-flow/cli@latest`
+- Cache npx si svuota automaticamente; pre-scaricata al prossimo run
 - Per trovare la versione in cache: `find ~/.npm/_npx -name "package.json" -path "*/@claude-flow/cli/package.json"`
+
+## Claude Code versioni osservate
+
+- 2.1.89 → 2026-04-06
+- 2.1.92 → 2026-04-07
+- 2.1.96 → 2026-04-08
 
 ## /x skill — Morning Intelligence Feed (creata 2026-04-07)
 
@@ -68,7 +74,8 @@ type: project
 - Cosa fa: legge Gmail per email da `roy.rigamonti@gmail.com` con keyword `claude/skill/hook/agent/mcp/setup/automation`, valuta importanza (LOW/MEDIUM/HIGH), installa MEDIUM+HIGH in autonomia, invia DM Slack con recap
 - Gmail account connesso: `roycolumbia@gmail.com` (non Outlook — originariamente richiesto per Outlook ma implementato via Gmail MCP)
 - Flusso self-send Roy: manda email da `roy.rigamonti@gmail.com` → `roycolumbia@gmail.com` con idee/skill/hook → `/x` le processa
-- **Nota:** al primo run (07/04/2026) nessuna email rilevante trovata — solo 2 forward hotel del 2016
+- **Nota:** al primo run (2026-04-07) nessuna email rilevante trovata — solo 2 forward hotel del 2016
+- Schedulato ogni mattina via LaunchAgent (stesso slot di /updates o subito dopo)
 
 ## Integrazione Slack
 
