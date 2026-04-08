@@ -238,7 +238,9 @@
     "brand-toolkit@brand-toolkit": true,
     "superpowers-chrome@superpowers-marketplace": true,
     "double-shot-latte@superpowers-marketplace": true,
-    "handoff@handoff-marketplace": true
+    "handoff@handoff-marketplace": true,
+    "c-level-skills@claude-code-skills": true,
+    "finance-skills@claude-code-skills": true
   },
   "extraKnownMarketplaces": {
     "awesome-claude-plugins": {
@@ -305,6 +307,12 @@
       "source": {
         "source": "github",
         "repo": "willseltzer/claude-handoff"
+      }
+    },
+    "claude-code-skills": {
+      "source": {
+        "source": "github",
+        "repo": "alirezarezvani/claude-skills"
       }
     }
   },

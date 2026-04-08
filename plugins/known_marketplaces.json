@@ -5,7 +5,7 @@
       "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-plugins-official",
-    "lastUpdated": "2026-04-08T09:59:08.552Z"
+    "lastUpdated": "2026-04-08T10:01:41.585Z"
   },
   "everything-claude-code": {
     "source": {
@@ -110,5 +110,13 @@
     },
     "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/handoff-marketplace",
     "lastUpdated": "2026-03-31T09:00:16.992Z"
+  },
+  "claude-code-skills": {
+    "source": {
+      "source": "github",
+      "repo": "alirezarezvani/claude-skills"
+    },
+    "installLocation": "/Users/royrigamonti/.claude/plugins/marketplaces/claude-code-skills",
+    "lastUpdated": "2026-04-08T10:01:47.202Z"
   }
 }
