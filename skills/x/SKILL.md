@@ -40,14 +40,25 @@ Per ogni email trovata estrai:
 
 Per ogni URL trovato nel corpo dell'email:
 - **URL GitHub** → `WebFetch` o `curl` sul README per leggere il contenuto
-- **URL X/Twitter** → usa `opencli twitter` per leggere il post (riusa la sessione Chrome):
+- **URL X/Twitter** → leggi il tweet con questo approccio a cascata:
   ```bash
-  # Estrai l'ID del tweet dall'URL (es. status/1234567890)
+  # 1. Prova fxtwitter (pubblico, no login richiesto)
+  tweet_id=$(echo "<url>" | grep -oE '[0-9]{15,}')
+  curl -s "https://api.fxtwitter.com/_/status/$tweet_id" | python3 -c "
+  import json,sys
+  d=json.load(sys.stdin)
+  t=d.get('tweet',{})
+  raw=t.get('raw_text',{})
+  text=raw.get('text','') if isinstance(raw,dict) else str(raw)
+  print('AUTHOR:', t.get('author',{}).get('name',''))
+  print('TEXT:', text)
+  "
+  # Se fxtwitter restituisce testo vuoto o solo t.co link → il tweet è un'immagine/video → LOW
+  # 2. Fallback: opencli (richiede Browser Bridge attivo)
   opencli twitter article <tweet_id>
-  # oppure: cerca il testo del tweet
-  opencli twitter search "<testo visibile nell'URL o snippet>"
   ```
-  Se opencli non è connesso (Browser Bridge non attivo), classifica come LOW e segnala nel recap.
+  Se fxtwitter restituisce solo un link t.co (tweet è immagine/video), classifica LOW.
+  Se fxtwitter fallisce completamente, prova opencli. Se anche opencli fallisce, classifica LOW.
 - **URL Reddit/HN** → `WebFetch` diretto (no login richiesto)
 
 ---
