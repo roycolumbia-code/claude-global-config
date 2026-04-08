@@ -4,10 +4,10 @@
     "agent-sdk-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/agent-sdk-dev/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/agent-sdk-dev/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:18:59.697Z",
-        "lastUpdated": "2026-04-08T13:30:06.256Z",
+        "lastUpdated": "2026-04-08T13:32:05.861Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -44,10 +44,10 @@
     "code-review@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/code-review/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/code-review/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:11.955Z",
-        "lastUpdated": "2026-04-08T13:30:06.259Z",
+        "lastUpdated": "2026-04-08T13:32:05.859Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -74,20 +74,20 @@
     "commit-commands@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/commit-commands/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/commit-commands/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:18.567Z",
-        "lastUpdated": "2026-04-08T13:30:06.265Z",
+        "lastUpdated": "2026-04-08T13:32:05.862Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "context7@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/context7/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/context7/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:19.630Z",
-        "lastUpdated": "2026-04-08T13:30:06.244Z",
+        "lastUpdated": "2026-04-08T13:32:05.838Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -114,20 +114,20 @@
     "feature-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/feature-dev/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/feature-dev/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:25.109Z",
-        "lastUpdated": "2026-04-08T13:30:06.273Z",
+        "lastUpdated": "2026-04-08T13:32:05.873Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "firebase@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/firebase/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/firebase/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:26.700Z",
-        "lastUpdated": "2026-04-08T13:30:06.235Z",
+        "lastUpdated": "2026-04-08T13:32:05.850Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -144,10 +144,10 @@
     "frontend-design@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/frontend-design/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/frontend-design/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:31.377Z",
-        "lastUpdated": "2026-04-08T13:30:06.267Z",
+        "lastUpdated": "2026-04-08T13:32:05.863Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -164,20 +164,20 @@
     "greptile@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/greptile/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/greptile/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:37.661Z",
-        "lastUpdated": "2026-04-08T13:30:06.235Z",
+        "lastUpdated": "2026-04-08T13:32:05.850Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "hookify@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/hookify/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/hookify/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:19:40.563Z",
-        "lastUpdated": "2026-04-08T13:30:06.285Z",
+        "lastUpdated": "2026-04-08T13:32:05.898Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -264,40 +264,40 @@
     "playground@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playground/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playground/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:20:11.332Z",
-        "lastUpdated": "2026-04-08T13:30:06.277Z",
+        "lastUpdated": "2026-04-08T13:32:05.880Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "playwright@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playwright/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/playwright/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:20:13.136Z",
-        "lastUpdated": "2026-04-08T13:30:06.238Z",
+        "lastUpdated": "2026-04-08T13:32:05.843Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "plugin-dev@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/plugin-dev/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/plugin-dev/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:20:13.833Z",
-        "lastUpdated": "2026-04-08T13:30:06.300Z",
+        "lastUpdated": "2026-04-08T13:32:05.908Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
     "pr-review-toolkit@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:20:16.076Z",
-        "lastUpdated": "2026-04-08T13:30:06.275Z",
+        "lastUpdated": "2026-04-08T13:32:05.879Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -334,10 +334,10 @@
     "security-guidance@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/security-guidance/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/security-guidance/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-02-12T14:20:23.444Z",
-        "lastUpdated": "2026-04-08T13:30:06.253Z",
+        "lastUpdated": "2026-04-08T13:32:05.858Z",
         "gitCommitSha": "2cd88e7947b7382e045666abee790c7f55f669f3"
       }
     ],
@@ -434,20 +434,20 @@
     "github@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/github/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/github/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-03-04T09:17:12.108Z",
-        "lastUpdated": "2026-04-08T13:30:06.242Z",
+        "lastUpdated": "2026-04-08T13:32:05.841Z",
         "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
       }
     ],
     "serena@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/serena/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/serena/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-03-04T09:17:25.681Z",
-        "lastUpdated": "2026-04-08T13:30:06.240Z",
+        "lastUpdated": "2026-04-08T13:32:05.842Z",
         "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
       }
     ],
@@ -464,10 +464,10 @@
     "supabase@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/supabase/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/supabase/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-03-04T09:17:42.764Z",
-        "lastUpdated": "2026-04-08T13:30:06.234Z",
+        "lastUpdated": "2026-04-08T13:32:05.848Z",
         "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
       }
     ],
@@ -484,10 +484,10 @@
     "linear@claude-plugins-official": [
       {
         "scope": "user",
-        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/linear/b59c8b370a49",
-        "version": "b59c8b370a49",
+        "installPath": "/Users/royrigamonti/.claude/plugins/cache/claude-plugins-official/linear/7457136212cf",
+        "version": "7457136212cf",
         "installedAt": "2026-03-04T09:17:43.713Z",
-        "lastUpdated": "2026-04-08T13:30:06.241Z",
+        "lastUpdated": "2026-04-08T13:32:05.840Z",
         "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1"
       }
     ],
